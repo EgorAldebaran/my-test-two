@@ -1,7 +1,7 @@
 <?php
 
-/// пусть на дана некая строка из различных слов либо же строки
-$_words = "jacke queen king dolores dolores jacke dolores";
+/// пусть нам дана некая строка из различных слов либо же строки
+$_words = "journe nighlapse pig night day pig pig pig";
 /// определение функции
 function search_large_element( $_words ) {
     /// главное чтобы их разделителем являлся пробел - используем explode для превращения строк в массив
@@ -11,10 +11,11 @@ function search_large_element( $_words ) {
     /// используем if кондицию в цикле для поиска самого большого числа - max - для этого поможет
     foreach ($count_system as $key => $value) {
         if($value == max($count_system)) {
-            echo "the largest name is - ";
+            echo "в этих предложениях (предложении) самое частое слово - ";
             echo $key;
-            echo "  and number ";
+            echo "  и повторяется оно ";
             echo $value;
+            echo " разa.";
         }
     }
 }
